@@ -1,0 +1,25 @@
+POST http://127.0.0.1:8080/post
+Content-Type: application/json
+
+{
+  "author" : "정은경",
+  "subject" : "정은경이다",
+  "article" : "저는 정은경입니다."
+}
+
+###
+
+GET http://127.0.0.1:8080/post/1
+
+###
+PUT http://127.0.0.1:8080/post/1
+Content-Type: application/json
+
+{
+  "subject" : "수정됨",
+  "article" : "이 글은 수정되었습니다."
+}
+
+###
+GET http://127.0.0.1:8080/postbyauthor/정은경
+Content-Type: application/json
