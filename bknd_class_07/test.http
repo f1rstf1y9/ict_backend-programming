@@ -1,0 +1,25 @@
+POST http://127.0.0.1:8080/user
+Content-Type: application/json
+
+{
+  "name" : "김김김",
+  "email" : "kim2@kim.com"
+}
+
+###
+GET http://127.0.0.1:8080/user
+
+###
+GET http://127.0.0.1:8080/user/1
+
+###
+PUT http://127.0.0.1:8080/user/2
+Content-Type: application/json
+
+{
+  "name" : "김수정",
+  "email" : "kim@kim.com"
+}
+
+###
+DELETE http://127.0.0.1:8080/user/1
